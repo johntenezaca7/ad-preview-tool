@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
     const { name } = this.props;
 
     return (
-      <div className="counter">
+      <div className="main-layout">
         <h1>Main Layout. Prop test: { name }.</h1>
       </div>
     );

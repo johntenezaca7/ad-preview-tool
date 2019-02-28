@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import Counter from "./containers/Counter";
+import Layout from "./components/Layout";
 
 class App extends Component {
   render() {
     return (
-      <Counter />
+      <Layout>
+      </Layout>
     );
   }
 }

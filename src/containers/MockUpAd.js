@@ -7,7 +7,7 @@ class MockUpAd extends Component {
 
     this.state = {
       start: false
-    }
+    };
   }
   render() {
     return (

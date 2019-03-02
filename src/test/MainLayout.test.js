@@ -1,13 +1,13 @@
 import React from "react";
 import Enzyme, { shallow, mount } from "enzyme";
-import Layout from "../components/Layout";
+import MainLayout from "../components/MainLayout";
 import Adapter from "enzyme-adapter-react-16";
 
 Enzyme.configure({ adapter: new Adapter() });
 
-describe("Layout Component", () => {
+describe("mainLayout Component", () => {
   test("renders", () => {
-    const wrapper = shallow(<Layout/>);
+    const wrapper = shallow(<MainLayout/>);
 
     expect(wrapper.exists()).toBe(true);
   });

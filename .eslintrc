@@ -33,7 +33,8 @@
       "semi": [
           "warn",
           "always"
-      ]
+      ],
+      "react/no-unescaped-entities": ["error", {"forbid": [">", "}"]}]
   },
   "parser": "babel-eslint"
 }

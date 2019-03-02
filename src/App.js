@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import Layout from "./components/Layout";
+import MainLayout from "./components/MainLayout";
 
 class App extends Component {
   render() {
     return (
-      <Layout name="John">
-      </Layout>
+      <MainLayout>
+        <h1> Hi! I'm building a fake Gatsby site as part of a tutorial!</h1>
+      </MainLayout>
     );
   }
 }

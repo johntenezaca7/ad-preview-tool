@@ -25,7 +25,7 @@ class MockUpAd extends Component {
           <p className="mock-up-ad__details">Cats go for world domination snuggles up to shoulders or knees and purrs you to sleep.</p>
         </div>
       </div>
-    )
+    );
   }
 }
 

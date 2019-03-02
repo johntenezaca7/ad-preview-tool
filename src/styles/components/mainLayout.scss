@@ -1,7 +1,18 @@
 $object: 'main-layout';
 
 .#{$object} {
-  margin: 3rem auto;
-  max-width: 80rem;
-  padding: 0 1rem;
+  margin: 1rem 2rem 0 2rem;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  &__top-section {
+    // background-color: $rosePastel;
+  }
+
+  &__main-section {
+    // background-color: $softOrangePastel;
+    margin-top: 5%;
+  }
 }

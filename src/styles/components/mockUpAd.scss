@@ -1,0 +1,67 @@
+$object: 'mock-up-ad';
+
+.#{$object} {
+
+  &__main-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    box-shadow: 5px 10px 8px #888888;
+
+    .#{$object} {
+      
+      &__imgs-wrapper {
+        position: relative;
+
+        .#{$object} {
+
+          &__main-img {
+            max-width: 350px;
+            width: auto;
+          }
+    
+          &__logo {
+            position: absolute;
+            bottom: 0;
+    
+            img {
+              max-height: 80px;
+            }
+          }
+        }
+
+      }
+
+      &__content {
+        padding: 10px;
+        .#{$object} {
+          &__sponsored-text {
+            margin-bottom: 6px;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 900;
+            text-align: left;
+          }
+
+          &__main-title {
+            font-size: 30px;
+          }
+
+          &__brand-sponsor {
+            margin: 10px 0;
+            font-size: 12px;
+            font-weight: 900;
+          }
+
+          &__details {
+            font-size: 17px;
+            line-height: 1.3;
+          }
+        }
+      }
+    }
+  }
+}

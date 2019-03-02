@@ -47,19 +47,17 @@ table {
 	border-spacing: 0;
 }
 
-hr {
-  border: 2px solid #666;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 36px;
-}
-
 // Main Color Scheme
-$whiteOrangePastel: #FFF9F4;
+$whiteOrangePastel: rgb(255, 251, 248);
 $rosePastel: #FFB29E;
 $softOrangePastel : #FFD2AD;
 $orangePastel: #FFB77C;
 $orangePastelDarker: #FFA051;
 $orangePastelDarkest: #FF8724;
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  background-color: $whiteOrangePastel;
+}

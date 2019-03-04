@@ -7,7 +7,6 @@ import ActiveLayout from "./ActiveLayout";
 class MainSection extends Component {
   render() {
     const { children, layoutType } = this.props;
-
     if (layoutType) {
       return (
         <section className="main-layout__main-section main-layout__main-section--active ">

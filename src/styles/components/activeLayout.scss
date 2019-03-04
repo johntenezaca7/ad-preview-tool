@@ -5,8 +5,17 @@ $object: 'active-layout';
   &__text-block {
     margin-bottom: 2rem;
     p {
-      line-height: 1.6;
-      font-size: 22px;
+      line-height: 1.8;
+      font-size: 16px;
+
+      @include Breakpoint(mediumsmall) {
+        font-size: 18px;
+      }
+
+      @include Breakpoint(medium) {
+        font-size: 22px;
+        line-height: 1.6;
+      }
     }
   }
 

@@ -5,3 +5,5 @@ const ImgBlock = () => (
     <img src="https://picsum.photos/900/500" alt="Place Holder"/>
   </div>
 );
+
+export default ImgBlock;

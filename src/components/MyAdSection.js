@@ -26,15 +26,17 @@ class MyAdSection extends Component {
       <section className="my-ad-section">
         <div className={ this.state.open ? "my-ad-section__overlay my-ad-section__overlay--opened" : "my-ad-section__overlay"} >
           <div className="my-ad-section__overlay-content">
-            <p className="my-ad-section__content-title">Layout Menu</p>
+            <div className="my-ad-section__top-content">
+              <p className="my-ad-section__content-title">Layout Menu</p>
+              <div className="my-ad-section__closebtn" onClick={this.toggleMyAdMenu} >&#10006;</div>
+            </div>
             <div className="my-ad-section__content-layout">
               <LayoutOptions/>
               <MockUpAd />
             </div>
           </div>
-          <div className="my-ad-section__closebtn" onClick={this.toggleMyAdMenu} >&#10006;</div>
         </div>
-        <button onClick={this.toggleMyAdMenu} className="my-ad-section__sidenav">Layouts &#9998; </button>
+        <div onClick={this.toggleMyAdMenu} className="my-ad-section__sidenav"><span>Layouts</span> &#9998; </div>
       </section>
     );
   };

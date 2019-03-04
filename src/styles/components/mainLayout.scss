@@ -12,7 +12,13 @@ $object: 'main-layout';
 
       &__message {
         margin-top: 2rem;
+        margin-left: 2rem;
         text-align: center;
+        font-size: 25px;
+        
+        @include Breakpoint(mediumsmall) {
+          font-size: 30px;
+        }
       }
     }
     span {
@@ -38,11 +44,18 @@ $object: 'main-layout';
   
         &__main-container {
           margin: 5rem 2rem 0 2rem;
-
-          @include Breakpoint(medium) {
-            margin: 5rem 15rem 0 15rem;
+          
+          @include Breakpoint(mediumsmall) {
+            margin: 5rem 5rem 0 5rem;
           }
 
+          @include Breakpoint(medium) {
+            margin: 5rem 10rem 0 10rem;
+          }
+
+          @include Breakpoint(mediumlarge) {
+            margin: 5rem 15rem 0 15rem;
+          }
         }
       }
     }

@@ -1,10 +1,14 @@
 $object: 'layoutOptions';
 
 .#{$object} {
-  background-color: white;
-  padding: 2rem 4rem;
-  width: 400px;
+  padding: 1rem 2rem;
   border-radius: 5px;
+  margin-bottom: 2rem;
+
+  @include Breakpoint(medium) {
+    background-color: white;
+    margin-top: 2rem;
+  }
 
   &__description {
     font-size: 25px;

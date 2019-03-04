@@ -1,17 +1,17 @@
 @mixin Breakpoint($point) {
 	@if $point == large {
-	  @media (min-width: rem(1400)) { @content ; }
+	  @media (min-width: 1400px) { @content ; }
 	}
 	@else if $point == mediumlarge {
-		@media (min-width: rem(1200)) { @content ; }
+		@media (min-width: 1200px) { @content ; }
 	}
 	@else if $point == bs4medium {
-		@media (max-width: rem(991)) { @content ; }
+		@media (max-width: 991px) { @content ; }
 	}
   @else if $point == medium {
-    @media (min-width: rem(768)) { @content ; }
+    @media (min-width: 768px) { @content ; }
   }
 	@else if $point == mediumsmall {
-		@media (min-width: rem(481)) { @content ; }
+		@media (min-width: 481px) { @content ; }
   }
 }

@@ -13,7 +13,7 @@ $object: 'my-ad-section';
     border: none;
     border-radius: 5px;
     background-color: $orangePastelDarkest;
-    width: 140px;
+    width: 30px;
     transition: 0.3s;
     text-align: right;
     box-shadow: 2px 4px 8px #888888;
@@ -24,10 +24,16 @@ $object: 'my-ad-section';
     }
     
     span {
-      margin: 0;
-      padding: 0;
-      font-size: 30px;
+      display: none;
+      @include Breakpoint(medium) {
+        display: inline;
+      }
     }
+
+    @include Breakpoint(medium) {
+      width: 120px;
+    }
+
   }
 
   &__overlay {
@@ -36,7 +42,7 @@ $object: 'my-ad-section';
     width: 0;
     z-index: 1;
     border: 2px solid $orangePastelDarkest;
-    background-color: rgb(255, 247, 247);
+    background-color: white;
     overflow-x: hidden;
     transition: 0.4s;
     z-index: 10;
@@ -48,31 +54,69 @@ $object: 'my-ad-section';
     justify-content: space-evenly;
 
     &--opened {
-      left: -40px;
+      left: 0;
       width: 100%;
-      height: 45rem;
+      height: 80rem;
+  
+      @include Breakpoint(medium) {
+        left: -40px;
+      }
+  
+      @include Breakpoint(mediumlarge) {
+        height: 50rem;
+      }
     }
   }
   
   &__overlay-content {
-    position: relative;
+    position: absolute;
     display: flex;
     width: 100%;
     flex-direction: column;
 
     .#{$object} {
+
+      &__top-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 2rem 1rem;
+
+        @include Breakpoint(medium) {
+          justify-content: space-between;
+          margin-bottom: 0;
+        }
+      }
+
       &__content-title {
-        margin: 2rem 7rem;
-        font-size: 50px;
+        font-size: 25px;
         font-weight: 900;
         color: rgb(255, 82, 29);
+
+        @include Breakpoint(mediumsmall) {
+          font-size: 35px;
+        }
+
+        @include Breakpoint(medium) {
+          margin: 2rem 7rem;
+          font-size: 50px;
+        }
+
       }
 
       &__content-layout {
         display: flex;
         width: 100%;
-        flex-direction: row;
-        justify-content: space-evenly;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include Breakpoint(mediumlarge) {
+          flex-direction: row;
+          justify-content: space-evenly;
+        }
+    
       }
     }
   }
@@ -80,10 +124,13 @@ $object: 'my-ad-section';
   
   &__closebtn {
     cursor: pointer;
-    margin-top: 1rem;
-    margin-right: 2rem;
     color: $orangePastelDarkest;
 
+    @include Breakpoint(medium) {
+      position: absolute;
+      top: 3%;
+      right: 2%;
+    }
   }
 
 }

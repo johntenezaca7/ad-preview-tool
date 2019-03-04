@@ -12,7 +12,7 @@ class MockUpAd extends Component {
   render() {
     return (
       <div className="mock-up-ad">
-        <h3>Preview:</h3>
+        <h3 className="mock-up-ad__top-title">Your Current Ad</h3>
         <Ad />
       </div>
     );

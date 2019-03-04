@@ -1,7 +1,11 @@
 // Reset
 @import "./global.scss";
 // Mixin
-@import './mixins';
+@import "./mixins";
 // Imports
 @import "./components/mainLayout.scss";
 @import "./components/mockUpAd.scss";
+@import "./components/genericBtn.scss";
+@import "./components/layoutOptions.scss";
+@import "./components/myAdSection.scss";
+@import "./components/activeLayout.scss";

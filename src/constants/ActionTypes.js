@@ -4,9 +4,8 @@
 // This prevents errors if they are misspelled over here.
 
 /* eslint-disable */
-
-export const INCREMENT_NUM = "INCREMENT_NUM";
-export const DECREMENT_NUM = "DECREMENT_NUM";
 export const RESET = "RESET";
+
+export const UPDATE_LAYOUT = "UPDATE_LAYOUT";
 
 /* eslint-enable */

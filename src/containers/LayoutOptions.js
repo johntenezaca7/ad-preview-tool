@@ -17,7 +17,7 @@ class LayoutOptions extends Component {
           { types.map(type => <GenericBtn layoutType={type} key={type} /> ) }
         </div>
       </div>
-    )
+    );
   }
 }
 
@@ -31,6 +31,6 @@ export const mapStateToProps = (store) => (
     layoutType: store.layoutType,
     types: store.typesOfLayouts
   }
-)
+);
 
 export default connect(mapStateToProps, null)(LayoutOptions);

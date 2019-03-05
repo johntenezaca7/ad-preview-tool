@@ -11,5 +11,5 @@ describe('Update Layout Action', () => {
     };
 
     expect(updateLayout(typeOfLayout)).toEqual(expectedAction);
-  })
-})
+  });
+});

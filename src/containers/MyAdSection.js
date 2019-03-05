@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 
-import MockUpAd from "../containers/MockUpAd";
-import LayoutOptions from "../containers/LayoutOptions";
+import MockUpAd from "../components/MockUpAd";
+import LayoutOptions from "./LayoutOptions";
 
 class MyAdSection extends Component {
   constructor(props) {
@@ -41,9 +40,5 @@ class MyAdSection extends Component {
     );
   };
 }
-
-MyAdSection.propTypes = {
-  children: PropTypes.node
-};
 
 export default MyAdSection;

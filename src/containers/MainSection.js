@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 
-import ActiveLayout from "./ActiveLayout";
+import ActiveLayout from "../components/ActiveLayout";
 
 class MainSection extends Component {
   render() {
@@ -40,4 +40,6 @@ export const mapStateToProps = (store) => (
 );
 
 export default connect(mapStateToProps, null)(MainSection);
+
+export const TestMainSection = MainSection;
 

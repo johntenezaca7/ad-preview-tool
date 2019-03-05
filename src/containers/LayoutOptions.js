@@ -33,4 +33,6 @@ export const mapStateToProps = (store) => (
   }
 );
 
+export const TestLayoutOptions = LayoutOptions;
+
 export default connect(mapStateToProps, null)(LayoutOptions);

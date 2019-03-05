@@ -28,4 +28,6 @@ export const mapDispatchToProps = dispatch => {
   };
 };
 
+export const TestGenericBtn = GenericBtn;
+
 export default connect(null, mapDispatchToProps)(GenericBtn);

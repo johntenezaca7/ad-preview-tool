@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import MainLayout from "./components/MainLayout";
-import MyAdSection from "./components/MyAdSection";
-import MainSection from "./components/MainSection";
+import MyAdSection from "./containers/MyAdSection";
+import MainSection from "./containers/MainSection";
 
 
 class App extends Component {

@@ -125,6 +125,14 @@ const ActiveLayout = ({ layoutType }) => {
             <ImgBlock width={450} height={300}/>
             <TextBlock />
           </div>
+          <div className={`active-layout__${layoutType}-rev-block`}>
+            <Ad layoutWrapper={layoutType} width={600} height={400}/>
+            <TextBlock />
+          </div>
+          <div className={`active-layout__${layoutType}-block`}>
+            <ImgBlock width={450} height={300}/>
+            <TextBlock />
+          </div>
         </div>
       );
       break;

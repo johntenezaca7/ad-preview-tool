@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Ad = ({ layoutWrapper }) => (
+const Ad = ({ layoutWrapper, width, height }) => (
   <div className={`mock-up-ad mock-up-ad__${layoutWrapper ? layoutWrapper : "in-layout-menu"}`}>
     <div className="mock-up-ad__main-wrapper">
       <div className="mock-up-ad__imgs-wrapper">
-        <img className="mock-up-ad__main-img" src="http://placekitten.com/1000/400" alt="Place-Holder"/>
+        <img className="mock-up-ad__main-img" src={`http://placekitten.com/${width}/${height}`}alt="Place-Holder"/>
         <div className="mock-up-ad__logo">
           <img src="https://www.brandcrowd.com/gallery/brands/thumbs/thumb15416578113904.jpg" alt="Logo"/>
         </div>
@@ -21,7 +21,9 @@ const Ad = ({ layoutWrapper }) => (
 );
 
 Ad.propTypes = {
-  layoutWrapper: PropTypes.string
+  layoutWrapper: PropTypes.string,
+  width: PropTypes.number,
+  height: PropTypes.number
 };
 
 export default Ad;

@@ -54,7 +54,13 @@ $object: 'main-layout';
           }
 
           @include Breakpoint(mediumlarge) {
-            margin: 5rem 15rem 0 15rem;
+            margin: 5rem 20rem 0 20rem;
+          }
+
+          &--grid-of-cards, &--boxes, &--f-shape, &--z-shape {
+            @include Breakpoint(mediumlarge) {
+              margin: 5rem 10rem 0 10rem;
+            }
           }
         }
       }

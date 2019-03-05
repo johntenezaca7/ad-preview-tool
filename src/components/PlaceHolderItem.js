@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 import PropTypes from "prop-types";
 
-const Ad = ({ layoutWrapper }) => (
-  <div className={`mock-up-ad mock-up-ad__${layoutWrapper ? layoutWrapper : "in-layout-menu"}`}>
+const PlaceHolderItem = ({ layoutWrapper }) => (
+  <div className={`mock-up-ad__${layoutWrapper} mock-up-ad__${layoutWrapper}--placeholder`}>
     <div className="mock-up-ad__main-wrapper">
       <div className="mock-up-ad__imgs-wrapper">
         <img className="mock-up-ad__main-img" src="http://placekitten.com/1000/400" alt="Place-Holder"/>
@@ -20,8 +20,8 @@ const Ad = ({ layoutWrapper }) => (
   </div>
 );
 
-Ad.propTypes = {
+PlaceHolderItem.propTypes = {
   layoutWrapper: PropTypes.string
 };
 
-export default Ad;
+export default PlaceHolderItem;

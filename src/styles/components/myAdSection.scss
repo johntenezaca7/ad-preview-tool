@@ -58,12 +58,8 @@ $object: 'my-ad-section';
       width: 100%;
       height: 80rem;
   
-      @include Breakpoint(medium) {
-        left: -40px;
-      }
-  
       @include Breakpoint(mediumlarge) {
-        height: 50rem;
+        height: 40rem;
       }
     }
   }
@@ -99,7 +95,7 @@ $object: 'my-ad-section';
         }
 
         @include Breakpoint(medium) {
-          margin: 2rem 7rem;
+          margin-left: 8rem;
           font-size: 50px;
         }
 

@@ -8,11 +8,12 @@ class MainSection extends Component {
   render() {
     const { children, layoutType } = this.props;
     if (layoutType) {
+      const layoutInClassFormat = layoutType.toLowerCase().split(' ').join('-');
       return (
         <section className="main-layout__main-section main-layout__main-section--active ">
           <p className="main-layout__message">Current Layout: { layoutType }</p>
-          <div className="main-layout__main-container">
-            <ActiveLayout layoutType={layoutType}/>
+          <div className={`main-layout__main-container main-layout__main-container--${layoutInClassFormat}`}>
+            <ActiveLayout layoutType={layoutInClassFormat}/>
           </div>
         </section>
       );

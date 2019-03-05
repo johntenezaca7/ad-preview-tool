@@ -87,21 +87,23 @@ const ActiveLayout = ({ layoutType }) => {
       return (
         <div className={`active-layout__${layoutType}`}>
           <div className={`active-layout__${layoutType}-block`}>
-            <ImgBlock width={500} height={400}/>
+            <ImgBlock width={450} height={400}/>
             <TextBlock />
           </div>
           <div className={`active-layout__${layoutType}-block`}>
             <Ad layoutWrapper={layoutType} width={600} height={400}/>
+            <TextBlock />
           </div>
           <div className={`active-layout__${layoutType}-block`}>
-            <ImgBlock width={500} height={400}/>
+            <ImgBlock width={450} height={400}/>
             <TextBlock />
           </div>
           <div className={`active-layout__${layoutType}-block`}>
             <Ad layoutWrapper={layoutType} width={600} height={400}/>
+            <TextBlock />
           </div>
           <div className={`active-layout__${layoutType}-block`}>
-            <ImgBlock width={500} height={400}/>
+            <ImgBlock width={450} height={400}/>
             <TextBlock />
           </div>
         </div>

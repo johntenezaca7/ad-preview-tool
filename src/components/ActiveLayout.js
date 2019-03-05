@@ -14,11 +14,11 @@ const ActiveLayout = ({ layoutType }) => {
       return (
         <div className={`active-layout__${layoutType}`}>
           <TextBlock />
-          <ImgBlock />
+          <ImgBlock width={800} height={400}/>
           <TextBlock />
           <Ad layoutWrapper={layoutType}/>
           <TextBlock />
-          <ImgBlock />
+          <ImgBlock width={800} height={400}/>
         </div>
       );
       break;
@@ -27,40 +27,24 @@ const ActiveLayout = ({ layoutType }) => {
       return (
         <div className={`active-layout__${layoutType}`}>
           <div className={`active-layout__${layoutType}--row`}>
-            <PlaceHolderItem layoutWrapper={layoutType}/>
+            <PlaceHolderItem layoutWrapper={layoutType} width={900} height={400}/>
             <Ad layoutWrapper={layoutType}/>
-            <PlaceHolderItem layoutWrapper={layoutType}/>
+            <PlaceHolderItem layoutWrapper={layoutType} width={900} height={400}/>
           </div>
           <div className={`active-layout__${layoutType}--row`}>
-            <PlaceHolderItem layoutWrapper={layoutType}/>
-            <PlaceHolderItem layoutWrapper={layoutType}/>
-            <PlaceHolderItem layoutWrapper={layoutType}/>
+            <PlaceHolderItem layoutWrapper={layoutType} width={900} height={400}/>
+            <PlaceHolderItem layoutWrapper={layoutType} width={900} height={400}/>
+            <PlaceHolderItem layoutWrapper={layoutType} width={900} height={400}/>
           </div>
           <div className={`active-layout__${layoutType}--row`}>
-            <PlaceHolderItem layoutWrapper={layoutType}/>
+            <PlaceHolderItem layoutWrapper={layoutType} width={900} height={400}/>
             <Ad layoutWrapper={layoutType}/>
-            <PlaceHolderItem layoutWrapper={layoutType}/>
+            <PlaceHolderItem layoutWrapper={layoutType} width={900} height={400}/>
           </div>
           <div className={`active-layout__${layoutType}--row`}>
-            <PlaceHolderItem layoutWrapper={layoutType}/>
-            <PlaceHolderItem layoutWrapper={layoutType}/>
-            <PlaceHolderItem layoutWrapper={layoutType}/>
-          </div>
-        </div>
-      );
-      break;
-
-    case "magazine":
-      return (
-        <div className={`active-layout__${layoutType}`}>
-          <div className={`active-layout__${layoutType}-col-one`}>
-            column 1
-          </div>
-          <div className={`active-layout__${layoutType}-col-two`}>
-            colum 2
-          </div>
-          <div className={`active-layout__${layoutType}-col-three`}>
-            column 3
+            <PlaceHolderItem layoutWrapper={layoutType} width={900} height={400}/>
+            <PlaceHolderItem layoutWrapper={layoutType} width={900} height={400}/>
+            <PlaceHolderItem layoutWrapper={layoutType} width={900} height={400}/>
           </div>
         </div>
       );
@@ -70,7 +54,7 @@ const ActiveLayout = ({ layoutType }) => {
       return (
         <div className={`active-layout__${layoutType}`}>
           <div className={`active-layout__${layoutType}-box-one`}>
-            <ImgBlock />
+            <ImgBlock width={800} height={400}/>
           </div>
           <div className={`active-layout__${layoutType}-wrapper`}>
             <div className={`active-layout__${layoutType}-box-two`}>
@@ -81,7 +65,7 @@ const ActiveLayout = ({ layoutType }) => {
             </div>
           </div>
           <div className={`active-layout__${layoutType}-box-one`}>
-            <ImgBlock />
+            <ImgBlock width={800} height={400}/>
           </div>
           <div className={`active-layout__${layoutType}-wrapper`}>
             <div className={`active-layout__${layoutType}-box-two`}>
@@ -98,10 +82,26 @@ const ActiveLayout = ({ layoutType }) => {
     case "f-shape":
       return (
         <div className={`active-layout__${layoutType}`}>
-          <div>F Content</div>
-          <div>F Content</div>
-          <div>Add</div>
-          <div>F Content</div>
+          <div className={`active-layout__${layoutType}-block`}>
+            <ImgBlock width={500} height={400}/>
+            <TextBlock />
+          </div>
+          <div className={`active-layout__${layoutType}-block`}>
+            <ImgBlock width={500} height={400}/>
+            <TextBlock />
+          </div>
+          <div className={`active-layout__${layoutType}-block`}>
+            <ImgBlock width={500} height={400}/>
+            <TextBlock />
+          </div>
+          <div className={`active-layout__${layoutType}-block`}>
+            <ImgBlock width={500} height={400}/>
+            <TextBlock />
+          </div>
+          <div className={`active-layout__${layoutType}-block`}>
+            <ImgBlock width={500} height={400}/>
+            <TextBlock />
+          </div>
         </div>
       );
       break;
@@ -109,29 +109,17 @@ const ActiveLayout = ({ layoutType }) => {
     case "z-shape":
       return (
         <div className={`active-layout__${layoutType}`}>
-          <div>
-            <div>
-              Pic
-            </div>
-            <div>
-              Details
-            </div>
+          <div className={`active-layout__${layoutType}-block`}>
+            <ImgBlock width={500} height={400}/>
+            <TextBlock />
           </div>
-          <div>
-            <div>
-              Pic Reverse
-            </div>
-            <div>
-              Details
-            </div>
+          <div className={`active-layout__${layoutType}-rev-block`}>
+            <ImgBlock width={500} height={400}/>
+            <TextBlock />
           </div>
-          <div>
-            <div>
-              Pic
-            </div>
-            <div>
-              Details
-            </div>
+          <div className={`active-layout__${layoutType}-block`}>
+            <ImgBlock width={500} height={400}/>
+            <TextBlock />
           </div>
         </div>
       );

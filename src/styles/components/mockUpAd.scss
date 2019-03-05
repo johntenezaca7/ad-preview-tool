@@ -133,6 +133,7 @@ $object: 'mock-up-ad';
             .#{$object} {
     
               &__main-img {
+                height: 12rem;
                 width: 100%;
                 max-width: 100%;
               }

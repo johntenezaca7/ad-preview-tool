@@ -70,10 +70,6 @@ $object: 'active-layout';
       }
     }
   }
-  
-  &__magazine {
-
-  }
 
   &__boxes {
     &-wrapper {
@@ -87,10 +83,27 @@ $object: 'active-layout';
   }
 
   &__f-shape {
+    display: flex;
+    flex-direction: column;
 
+    &-block {
+      display: flex;
+      flex-direction: row;
+    }
   }
 
   &__z-shape {
+    display: flex;
+    flex-direction: column;
 
+    &-block {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &-rev-block {
+      display: flex;
+      flex-direction: row-reverse;
+    }
   }
 }
